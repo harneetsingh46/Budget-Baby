@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { Auth } from "../api/model/auth.schema.js";
+import { Auth } from "../src/model/auth.schema.js";
 export const protect = async (req,res,next)=>{
     try {
         const token = req.cookies.token;

@@ -1,10 +1,10 @@
 import dotenv from "dotenv";
 import express from "express";
-import authRouter from "./api/routes/auth.routes.js";
-import categoryRouter from "./api/routes/category.routes.js";
-import budgetRouter from "./api/routes/budget.routes.js";
-import purchaseRouter from "./api/routes/purchase.route.js";
-import dashboardRouter from "./api/routes/dashboard.routes.js";
+import authRouter from "./src/routes/auth.routes.js";
+import categoryRouter from "./src/routes/category.routes.js";
+import budgetRouter from "./src/routes/budget.routes.js";
+import purchaseRouter from "./src/routes/purchase.route.js";
+import dashboardRouter from "./src/routes/dashboard.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
