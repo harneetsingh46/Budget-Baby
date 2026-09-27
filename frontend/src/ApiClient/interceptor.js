@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: "http://localhost:3000/api/",
+    baseURL: "https://budget-buddy-ashy-five.vercel.app/api/"||"http://localhost:3000/api/",
     withCredentials: true     //jitin bhi req jaegi use sath cookies ko leke jane k liye
 })
 

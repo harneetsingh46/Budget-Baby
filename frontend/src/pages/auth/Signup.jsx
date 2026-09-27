@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import lottii from "../../lottie/signup.json";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+import apiClient from "../../ApiClient/interceptor";
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -32,8 +33,8 @@ const Signup = () => {
 
     const signupAxios = async (data) => {
         try {
-            const response = await axios.post(
-                "http://localhost:3000/api/auth/signup",
+            const response = await apiClient.post(
+                "auth/signup",
                 data
             );
 
