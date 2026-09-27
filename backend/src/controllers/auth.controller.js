@@ -60,13 +60,11 @@ export const signin = async (req, res, next) => {
     const token = await genToken(user._id, user.userName, user.email);
     console.log(token, "test");
 
-    return res
-      .status(200)
+    return res.status(200)
       .cookie("token", token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "strict",
-        maxAge: 24 * 60 * 60 * 100,
+        secure: true, // required for sameSite: "none"
+        sameSite: "none", // required for cross-site requests
       })
       .json({
         message: "User login Successfull",
@@ -106,14 +104,14 @@ export const getUser = async (req, res, next) => {
   }
 };
 
-export const SignOut = async (req,res,next)=>{
+export const SignOut = async (req, res, next) => {
   try {
     return res.clearCookie("token").status(200).json({
-      message: "Sign Out Successfull!"
-    })
+      message: "Sign Out Successfull!",
+    });
   } catch (err) {
     return res.status(500).json({
-      message: err.message
-    })
+      message: err.message,
+    });
   }
-}
+};
