@@ -39,7 +39,7 @@ const Dashboard = () => {
       setLoading(true);
 
       try {
-        const response = await apiClient.get("/dashboard");
+        const response = await apiClient.get("/dashboard/");
 
         console.log("Dashboard response:", response.data);
 
