@@ -18,7 +18,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://budget-baby.vercel.app/"],
+    origin: [
+      "https://budget-baby.vercel.app/",
+      "http://localhost:5173",
+      "https://budget-baby.vercel.app/",
+    ],
     credentials: true,
   }),
 );
