@@ -19,7 +19,7 @@ const SignOut = () => {
      logout()
   }, [])
   return (
-    <div>SignOut</div>
+    <div>SignOut....</div>
   )
 }
 
