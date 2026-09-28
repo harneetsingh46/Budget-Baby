@@ -23,7 +23,7 @@ const Navbar = () => {
                     onClick={closeMenu}
                     className="text-[1.5rem] font-bold tracking-[-0.5px] text-[#926b42] no-underline"
                 >
-                    Budget Buddy
+                    Budget Baby
                 </Link>
             </div>
 

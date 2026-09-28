@@ -29,7 +29,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#8C7662]">
-              Budget Buddy helps you organize your budgets, track your spending,
+              Budget Baby helps you organize your budgets, track your spending,
               and build better financial habits — all in one simple place.
             </p>
 
@@ -145,7 +145,7 @@ const Hero = () => {
             </h2>
 
             <p className="mt-4 text-[#8C7662]">
-              Budget Buddy keeps financial planning simple so you can focus on
+              Budget Baby keeps financial planning simple so you can focus on
               making better decisions with your money.
             </p>
           </div>
