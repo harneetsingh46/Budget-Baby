@@ -17,9 +17,8 @@ dotenv.config();
 app.use(
   cors({
     origin: [
-      "https://budget-baby.vercel.app/",
+      "https://budget-baby.vercel.app",
       "http://localhost:5173",
-      "https://budget-baby.vercel.app/",
     ],
     credentials: true,
   }),
